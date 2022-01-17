@@ -1,7 +1,6 @@
 
 body {
 
-background-color: black;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -29,7 +28,3 @@ div{
 .btn-group .button:hover {
     background-color: #3e8e41;
     }
-
-h1{
-    color: white ;
-}
