@@ -6,14 +6,10 @@ background-size: cover;
 color:rgb(255, 255, 255);
 }
 
-div{
-        display:inline-block;
-        width:321px;
-        vertical-align:top;
-    }
+
 
 .btn-group .button {
-      background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -22,25 +18,60 @@ div{
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    }
-    
-.btn-group .button:hover {
-    background-color: #3e8e41;
-    }
-
-#uperka {
-    background-color: dodgerblue;
-    width: 100%;
 }
 
-h1  { 
+
+    
+.btn-group .button:hover {
+    background-color: #f80000;
+
+    }
+
+
+
+#uperka {
+    background-color: rgba(255, 255, 255, 0.068);
+    width: 100%;
+    height: 40em;
+}
+
+
+
+a{
+    color: aliceblue;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+
+h1{ 
     display: block;
-    font-size: 5em;
+    font-size: 6em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
     }
 
+#list_id{
+    color: black;
+    font-size: 2em;
+}
 
+
+#aaa{
+    background-color: blue;
+}
+
+.background{
+    padding: 1em;
+}
