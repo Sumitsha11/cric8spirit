@@ -7,7 +7,7 @@ color:rgb(255, 255, 255);
 }
 
 img{
-    height: 70px;
+    height: 90px;
 }
 
 
@@ -19,21 +19,21 @@ img{
 
 nav a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 40px;
     font-family:monospace;
     color: aliceblue;
-    margin: 2em;
+    margin: 0.5em;
 }
 
 
 
 h1{ 
     display: block;
-    font-size: 6em;
+    font-size: 8em;
     font-weight: bold;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
