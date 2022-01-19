@@ -47,14 +47,10 @@ a{
 h1{ 
     display: block;
     font-size: 6em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
     font-weight: bold;
+    padding-top: 60%;
+    padding-bottom: 50%;
     color: rgb(255, 255, 255);
-    border-radius: 1em;
-    padding: 1em;
     position: absolute;
     top: 40%;
     left: 50%;
