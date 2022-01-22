@@ -8,52 +8,29 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <h1>Team Selection</h1>
+    <center><h1>Team Selection</h1></center>
     <hr>
-    <div class="container">
+    <div class="box">
         <form action="#">
-            <p>
-                *Name <select name="name" id="name">
-                    <option value="">--Name--</option>
-                    <option value="aksh">Akshbir</option>
-                    <option value="ankit">Ankit</option>
-                    <option value="moe">Manjot</option>
-                    <option value="guri">Gursharan</option>
-                    <option value="pius">Piyush</option>
-                    <option value="sahil">Sahil</option>
-                    <option value="shabad">Shabad</option>
-                    <option value="sumit">Sumit</option>
-                </select>
-            </p>
-            <p>
-                *Unicode: <input type="password" onKeyPress="if(this.value.length==6) return false;"/>
-            </p>
-            <p>
-                <fieldset>
-                    <legend>
-                        Bowler
-                    </legend>
-                    <textarea name="bowl" id="data" cols="30" rows="10"></textarea>
-                </fieldset>
-            </p>
-            <p>
-                <fieldset>
-                    <legend>
-                        Batsmen
-                    </legend>
-                    <textarea name="bowl" id="data" cols="30" rows="10"></textarea>
-                </fieldset>
-            </p>
-            <p>
-                <fieldset>
-                    <legend>Bowlers</legend>
-                        <select name="bowl" id="data">
-                            <optgroup id="t1">
-                                <option value=""></option>
-                            </optgroup>
-                        </select>
-                </fieldset>
-            </p>
+            <h1 id="login">LOGIN</h1><hr>
+            <div class="st">
+                <p>
+                    <select id="name">
+                        <option value="">--Name--</option>
+                        <option value="aksh">Akshbir</option>
+                        <option value="ankit">Ankit</option>
+                        <option value="moe">Manjot</option>
+                        <option value="guri">Gursharan</option>
+                        <option value="pius">Piyush</option>
+                        <option value="sahil">Sahil</option>
+                        <option value="shabad">Shabad</option>
+                        <option value="sumit">Sumit</option>
+                    </select>
+                </p>
+                <p>
+                    *Unicode: <input id="code" type="password" onKeyPress="if(this.value.length==6) return false;"/>
+                </p>
+            </div>
             <input type="submit" value="done">
         </form>
     </div>
