@@ -1,12 +1,13 @@
 *{
     box-sizing: border-box;
 }
-
+h1{
+    font-size: 50px;
+}
 
 
 body{
     background-image: url("form.png");
-    /* background-color: black; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -23,8 +24,8 @@ body{
     display: flex;
     flex-direction: column;
     width: 500px;
-    margin-top: 150px;
-    margin-left: 500px;
+    margin-top: 17em;
+    margin-left: 5em;
     padding: 5px 20px 15px 20px;
     background: transparent;
     box-shadow: 0 0 15px rgb(255, 255, 255);
@@ -52,4 +53,6 @@ body{
 
 select option{
     background-color: transparent;
+    
 }
+
