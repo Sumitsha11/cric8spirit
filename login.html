@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+
+
+</head>
+<body>
+    <div class="box">
+        <div id="row">
+            <h1 id="log">LOGIN</h1>
+        </div>
+        <form method="post" autocomplete="off" name="google-sheet">
+            <div class="st">
+                <input id="Name"type="text" name="Name"  placeholder="Name*" value="" required=""/>
+            </div><br>
+            <div class="st">
+                <input type="password" id="unicode"name="Unicode"  placeholder="Unicode*" value="" required="" onKeyPress="if(this.value.length==6) return false;"/>
+            </div><br><br>
+        </div>
+
+    <div class="box">
+        <div id="row">
+            <h1 id="log">Bowlers</h1>
+        </div>
+            <div id="bowl">
+                <p>Kl Rahul<input type="checkbox" name="Bowl" id="" value="Kl Rahul"></p>
+                <p>Virat Kohli<input type="checkbox" name="Bowl" id="" value="Virat Kohli"></p>
+                <p>Dhawan<input type="checkbox" name="Bowl" id="" value="Dhawan"></p>
+                <p>SKY<input type="checkbox" name="Bowl" id="" value="SKY"></p>
+                <p>Iyer<input type="checkbox" name="Bowl" id="" value="Iyer"></p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div id="row">
+                <h1 id="log">Batsman</h1>
+            </div>
+                <div id="bowl">
+                    <p>Kl Rahul<input type="checkbox" name="Bat" id="" value="Kl Rahul"></p>
+                    <p>Virat Kohli<input type="checkbox" name="Bat" id="" value="Virat Kohli"></p>
+                    <p>Dhawan<input type="checkbox" name="Bat" id="" value="Dhawan"></p>
+                    <p>SKY<input type="checkbox" name="Bat" id="" value="SKY"></p>
+                    <p>Iyer<input type="checkbox" name="Bat" id="" value="Iyer"></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div id="row">
+                    <h1 id="log">Wicket Keepers</h1>
+                </div>
+                    <div id="bowl">
+                        <p>Kl Rahul<input type="checkbox" name="WK" id="" value="Kl Rahul"></p>
+                        <p>Virat Kohli<input type="checkbox" name="WK" id="" value="Virat Kohli"></p>
+                        <p>Dhawan<input type="checkbox" name="WK" id="" value="Dhawan"></p>
+                        <p>SKY<input type="checkbox" name="WK" id="" value="SKY"></p>
+                        <p>Iyer<input type="checkbox" name="WK" id="" value="Iyer"></p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div id="row">
+                        <h1 id="log">All Rounders</h1>
+                    </div>
+                        <div id="bowl">
+                            <p>Kl Rahul<input type="checkbox" name="All" id="" value="Kl Rahul"></p>
+                            <p>Virat Kohli<input type="checkbox" name="All" id="" value="Virat Kohli"></p>
+                            <p>Dhawan<input type="checkbox" name="All" id="" value="Dhawan"></p>
+                            <p>SKY<input type="checkbox" name="All" id="" value="SKY"></p>
+                            <p>Iyer<input type="checkbox" name="All" id="" value="Iyer"></p>
+                        </div>
+                    </div>
+<br><br>
+            <div class="form-group" >
+                <input type="submit" name="submit" value="Done" onClick="myFunction()"/>
+            </div><br>
+        </form>    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxZml80Aq3kOsHkLQOUr8KdaMMvguKR5cnmj6Ju_2OpZ2_h-jndERYDoAJCg7iXQZf/exec'
+        const form = document.forms['google-sheet']
+        
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("done!"))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
