@@ -65,7 +65,7 @@ body{
 input[type="submit"]{
     font-size: 40px;
     width: 11em;
-    background: linear-gradient(to right, aqua,darkblue );
+    background: linear-gradient(to right,orange,red );
     border: none;
     border-radius: 10px;
     margin-top: 10px;
@@ -82,7 +82,7 @@ input[type="submit"]{
 
 }
 
-#bowl{
+#each{
     font-size: 60px;
 }
 
@@ -109,4 +109,15 @@ input[type="checkbox"]{
 
 .form-group{
     text-align: center;
+    
+}
+
+#back{
+    color: rgb(255, 255, 255);
+    height: 60px;
+    width: 20%;
+    font-size: 25px;
+    background: linear-gradient(to right,orange,red);
+    border-radius: 20px;
+    border: none;
 }
