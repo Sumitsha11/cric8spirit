@@ -28,9 +28,9 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="#" class="nav-item nav-link active"><div style="font-size: 25px;">Home</div> </a>
-                        <a href="rule.html" class="nav-item nav-link"><div style="font-size: 30px;">Rules</div></a>
-                        <a href="pg.html" class="nav-item nav-link"><div style="font-size: 30px;">PlayGround</div></a>
-                        <a href="result.html" class="nav-item nav-link"><div style="font-size: 30px;">Results</div></a>
+                        <a href="../html/rule.html" class="nav-item nav-link"><div style="font-size: 30px;">Rules</div></a>
+                        <a href="../html/pg.html" class="nav-item nav-link"><div style="font-size: 30px;">PlayGround</div></a>
+                        <a href="../html/result.html" class="nav-item nav-link"><div style="font-size: 30px;">Results</div></a>
                     </div>
             </div>
         </nav>
@@ -39,10 +39,10 @@
 
 
         <div class="card mb-3 container-lg " style="margin-top: 5.5em; background-color: ghostwhite;">
-            <img src="upcoming.png" class="card-img-top" alt="">
+            <img src="../images/upcoming.png" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">India Vs West Indies</h5>
-                <p class="card-text" style="font-size: 30px;">The game will start at 1:00 PM (Sunday,Feb 6th). Make your team beforehand!</p>
+                <p class="cardtext" style="font-size: 30px;">The Game will start in <p id="demo" style="font-size: 30px; background: linear-gradient(to right,blue,brown); width: 19%; text-align: center; color: aliceblue;"></p></p>
                 <p class="card-text" style="font-size: 25px;"><small class="text-muted">Last updated 25-01-2022</small></p>
             </div>
         </div>
@@ -52,7 +52,7 @@
     <div class="row">
         <div class="col">
             <div class="card" style="width: 100%;">
-                <img src="r3.png" class="card-img-top" alt="...">
+                <img src="../images/r3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">ODI</h5>
                     <p class="card-text">India Vs South Africa</p>
@@ -61,7 +61,7 @@
         </div>
         <div class="col">
             <div class="card" style="width: 100%;">
-                <img src="r3.png" class="card-img-top" alt="...">
+                <img src="../images/r3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">ODI</h5>
                     <p class="card-text">India Vs South Africa</p>
@@ -70,9 +70,135 @@
         </div>
     </div>
     <div class="d-grid gap-2 mt-3" >
-        <a href="result.html"><button class="btn btn-primary" type="button" style="font-size: 33px;">View All Results</button></a>
+        <a href="../html/result.html"><button class="btn btn-primary" type="button" style="font-size: 33px;">View All Results</button></a>
     </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Feb 6, 2022 13:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
 </body>
 </html>
